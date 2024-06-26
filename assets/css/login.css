@@ -1,0 +1,87 @@
+.login-bg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.discord-logo {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.authBox {
+    width: 740px;
+    height: 344px;
+    padding: 32px;
+    background-color: #2C2F33;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--header-secondary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.authBox h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--header-primary);
+}
+
+.login-form {
+    width: 416px;
+    height: 340px;
+}
+
+.qr-div {
+    width: 240px;
+    height: 344px;
+}
+
+.authBox-header {
+    text-align: center;
+}
+
+.authBox-form {
+    margin-top: 16px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    height: 20px;
+    padding: 8px;
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    color: var(--header-primary);
+    margin-bottom: 16px;
+}
+
+.btn {
+    background-color: rgb(88, 101, 242);
+    color: white;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.btn:hover {
+    background-color: rgb(75, 86, 202);
+}

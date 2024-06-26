@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.prevent-select {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.required {
+    color: var(--required);
+}
+
+.link {
+    color: oklab(0.700834 -0.0780351 -0.1469);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: oklab(0.700834 -0.0780351 -0.1469);
+    text-decoration: underline;
+}
+
+:root {
+    --header-primary: white;
+
+    --header-secondary: oklab(0.786807 -0.0025776 -0.0110238);
+
+    --required: #f04747;
+}
