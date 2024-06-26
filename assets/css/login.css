@@ -42,6 +42,7 @@
 .qr-div {
     width: 240px;
     height: 344px;
+    text-align: center;
 }
 
 .authBox-header {
@@ -84,4 +85,9 @@ input {
 
 .btn:hover {
     background-color: rgb(75, 86, 202);
+}
+
+.qr-code {
+    width: 176px;
+    height: 176px;
 }

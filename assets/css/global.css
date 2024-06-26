@@ -15,6 +15,10 @@
     color: var(--required);
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .link {
     color: oklab(0.700834 -0.0780351 -0.1469);
     text-decoration: none;
