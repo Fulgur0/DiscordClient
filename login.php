@@ -13,7 +13,9 @@
                 <h1>Welcome back!</h1>
                 <p>We're so excited to see you again!</p>
             </div>
-            <div class="authBox-form">
+            <form class="authBox-form" method="POST" action="<?php echo $APP_URL ?>/backend/authController.php">
+                <input type="hidden" name="action" value="login">
+                <input type="hidden" name="origin" value="<?php echo $APP_URL ?>/login.php">
                 <div class="inputBox">
                     <label for="email">EMAIL OR PHONE NUMBER</label>
                     <span class="required">*</span>
@@ -28,7 +30,7 @@
                 </div>
                 <a href="<?php echo $APP_URL ?>/forgot-password.php" class="link">Forgot your password?</a>
                 <button type="submit" class="btn">Login</button>
-            </div>
+            </form>
             <div class="authBox-footer">
                 <p>Don't have an account? <a href="register.html" class="link">Register</a></p>
             </div>
