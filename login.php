@@ -1,24 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord</title>
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/png">
-
-    <!-- styles -->
-    <link rel="stylesheet" href="../assets/css/login.css">
-    <link rel="stylesheet" href="../assets/css/global.css">
-
-    <!-- scripts -->
-    <script src="../assets/js/global.js"></script>
-    <script src="../assets/js/login.js"></script>
+    <?php require_once('layouts/head.php') ?>
+    <link rel="stylesheet" href="<?php echo $APP_URL ?>/assets/css/login.css">
 </head>
-
 <body>
-    <img src="../assets/images/login-bg.svg" alt="login-bg" class="login-bg prevent-select">
-    <img src="../assets/images/discord-logo.svg" alt="discord-logo" class="discord-logo prevent-select">
+    <img src="<?php echo $APP_URL ?>/assets/images/login-bg.svg" alt="login-bg" class="login-bg prevent-select">
+    <img src="<?php echo $APP_URL ?>/assets/images/discord-logo.svg" alt="discord-logo" class="discord-logo prevent-select">
     <div class="authBox">
         <div class="login-form">
             <div class="authBox-header">
@@ -38,7 +26,7 @@
                     <br>
                     <input type="password" name="password" id="password" required>
                 </div>
-                <a href="forgot-password.html" class="link">Forgot your password?</a>
+                <a href="<?php echo $APP_URL ?>/forgot-password.php" class="link">Forgot your password?</a>
                 <button type="submit" class="btn">Login</button>
             </div>
             <div class="authBox-footer">
@@ -47,13 +35,12 @@
         </div>
         <div class="qr-div">
             <div class="qrCode">
-                <img src="../assets/images/qr-code-overlay.png" alt="qr-code" class="prevent-select qr-code">
+                <img src="<?php echo $APP_URL ?>/assets/images/qr-code-overlay.png" alt="qr-code" class="prevent-select qr-code">
                 <h1>Login with QR Code</h1>
                 <p>Scan this QR code with your <span class="bold">Discord mobile app</span> to log in instantly.</p>
-                <a href="" class="link">Or, sign in with passkey</a>
+                <a href="<?php echo $APP_URL ?>" class="link">Or, sign in with passkey</a>
             </div>
         </div>
     </div>
 </body>
-
 </html>
